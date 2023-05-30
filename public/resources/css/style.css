@@ -1,0 +1,257 @@
+@font-face {
+  font-family: "Geo-Mtav-Bold";
+  src: url("../fonts/bpg_nino_mtavruli_bold.woff") format("woff"); }
+@font-face {
+  font-family: "Geo-Mtav-Norm";
+  src: url("../fonts/bpg_nino_mtavruli_normal.woff") format("woff"); }
+@font-face {
+  font-family: "Geo-Nusx-Norm";
+  src: url("../fonts/bpg_arial_2009.woff") format("woff"); }
+* {
+  font-family: "Geo-Nusx-Norm", serif;
+  color: #383838; }
+
+.btn-primary {
+  background: #5F59F7;
+  border-radius: 4px;
+  color: #fff;
+  font-family: "Geo-Mtav-Bold", serif;
+  font-size: 16px;
+  border: none; }
+
+.btn-secondary {
+  background: #fff;
+  border-radius: 4px;
+  border: 1px solid #5F59F7;
+  color: #383838;
+  font-family: "Geo-Mtav-Bold", serif;
+  font-size: 16px; }
+
+.nav .navbar-brand span {
+  font-size: 24px;
+  line-height: 25px;
+  font-weight: bold; }
+  .nav .navbar-brand span:first-child {
+    color: #5F59F7; }
+  .nav .navbar-brand span:nth-child(2) {
+    color: #383838; }
+.nav .navbar-nav.menu li {
+  padding: 0 15px; }
+  .nav .navbar-nav.menu li a {
+    font-family: "Geo-Mtav-Bold", serif; }
+    .nav .navbar-nav.menu li a.active {
+      border-bottom: 2px solid #5F59F7; }
+.nav .navbar-nav.side-menu button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Geo-Mtav-Bold", serif;
+  background: none;
+  border: none; }
+  .nav .navbar-nav.side-menu button img {
+    width: 24px;
+    margin-bottom: 5px; }
+  .nav .navbar-nav.side-menu button:first-child {
+    margin-left: 10px; }
+
+.bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 803px;
+  background: #6592FD;
+  opacity: 10%;
+  z-index: -1; }
+
+.home .col {
+  height: 705px;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .home .col:first-child {
+    flex-direction: column;
+    align-items: start; }
+  .home .col .main-image {
+    width: 412px;
+    height: 550px;
+    border-radius: 43%;
+    position: relative; }
+    .home .col .main-image:before {
+      position: absolute;
+      top: 70px;
+      z-index: -1;
+      left: -85px;
+      content: url("../img/dots1.svg"); }
+    .home .col .main-image:after {
+      position: absolute;
+      bottom: 110px;
+      z-index: -1;
+      right: -107px;
+      content: url("../img/dots1.svg"); }
+  .home .col form {
+    width: 100%; }
+    .home .col form input {
+      border: none;
+      border-radius: 4px;
+      font-family: "Geo-Nusx-Norm", serif;
+      padding: 11px 16px;
+      margin-bottom: 20px;
+      margin-top: 40px; }
+      .home .col form input::placeholder {
+        font-family: "Geo-Nusx-Norm", serif; }
+    .home .col form button {
+      width: 100%; }
+.home h1 {
+  vertical-align: middle;
+  font-family: "Geo-Mtav-Bold", Serif, serif;
+  max-width: 90%; }
+
+.block h2 {
+  margin-bottom: 30px;
+  margin-top: 50px;
+  font-family: "Geo-Mtav-Bold", serif;
+  font-size: 28px;
+  text-align: center; }
+.block .block-link {
+  text-align: center;
+  margin-bottom: 20px; }
+  .block .block-link a {
+    color: #697586; }
+.block .content {
+  text-align: center;
+  position: relative; }
+
+.main-categories .content:before {
+  content: url("../img/categories-dots.svg");
+  position: absolute;
+  z-index: -1;
+  top: -40px;
+  left: 65px;
+  opacity: 60%; }
+.main-categories .content:after {
+  content: url("../img/categories-dots.svg");
+  position: absolute;
+  z-index: -1;
+  top: -63px;
+  right: 31px;
+  transform: rotate(180deg);
+  opacity: 60%; }
+.main-categories .content a {
+  font-family: "Geo-Mtav-Norm", serif;
+  display: inline-block;
+  margin: 10px;
+  padding: 15px 27px;
+  font-size: 16px; }
+
+.feature-brands {
+  margin-top: 100px; }
+  .feature-brands h2 {
+    margin-bottom: 20px; }
+  .feature-brands .content {
+    display: flex;
+    flex-wrap: wrap; }
+    .feature-brands .content div {
+      flex: 1 0 21%;
+      margin: 10px;
+      height: 86px;
+      box-shadow: 2px 3px 4px rgba(193, 193, 193, 0.1); }
+      .feature-brands .content div a {
+        width: 100%;
+        height: inherit;
+        display: flex;
+        align-items: center;
+        justify-content: center; }
+
+.compare-block {
+  background-color: rgba(101, 146, 253, 0.1);
+  padding: 50px 0;
+  margin-top: 100px; }
+  .compare-block .content h2 {
+    font-family: "Geo-Mtav-Bold", serif;
+    font-size: 28px;
+    margin-bottom: 20px; }
+  .compare-block .content form {
+    background-color: #fff;
+    padding: 40px 20px;
+    border-radius: 4px;
+    position: relative; }
+    .compare-block .content form .form-group {
+      flex: 1 0 31%;
+      margin: 0 10px; }
+      .compare-block .content form .form-group input {
+        width: 100%;
+        border-color: #6592FD;
+        padding: 15px; }
+      .compare-block .content form .form-group button {
+        width: 100%;
+        padding: 15px; }
+    .compare-block .content form:before {
+      position: absolute;
+      top: -6px;
+      z-index: -1;
+      opacity: 0.3;
+      left: -85px;
+      content: url(../img/dots1.svg); }
+    .compare-block .content form:after {
+      position: absolute;
+      bottom: 56px;
+      z-index: -1;
+      right: -107px;
+      content: url(../img/dots1.svg);
+      opacity: 0.3; }
+
+@media (max-width: 767px) {
+  .carousel-inner .carousel-item > div {
+    display: none; }
+
+  .carousel-inner .carousel-item > div:first-child {
+    display: block; } }
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+  display: flex; }
+
+/* medium and up screens */
+@media (min-width: 768px) {
+  .carousel-inner .carousel-item-end.active,
+  .carousel-inner .carousel-item-next {
+    transform: translateX(25%); }
+
+  .carousel-inner .carousel-item-start.active,
+  .carousel-inner .carousel-item-prev {
+    transform: translateX(-25%); } }
+.stars {
+  text-align: left;
+  padding: 0 20px;
+  margin-bottom: 20px; }
+  .stars img {
+    width: 14px; }
+
+.products-carousel h2 {
+  margin-top: 100px; }
+
+.carousel .carousel-inner .carousel-item-end,
+.carousel .carousel-inner .carousel-item-start {
+  transform: translateX(0); }
+.carousel .card {
+  border: none; }
+.carousel .carousel-control-prev-icon {
+  background-image: url("../img/arrow-left.svg"); }
+.carousel .carousel-control-next-icon {
+  background-image: url("../img/arrow-right.svg"); }
+.carousel .carousel-control-prev {
+  left: 0;
+  margin: 0;
+  width: 32px; }
+.carousel .carousel-control-next {
+  margin: 0;
+  width: 32px; }
+.carousel .carousel-item .card-content h3 {
+  font-family: "Geo-Mtav-Norm", serif;
+  font-size: 16px;
+  text-align: left;
+  padding: 20px 20px 10px;
+  margin: 0; }
+
+/*# sourceMappingURL=style.css.map */
